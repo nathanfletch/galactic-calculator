@@ -29,15 +29,15 @@ export default class Planet {
     return Math.floor((this.earthAgeOfUser * 365) / this.daysInSolarYear);
   }
   
-  // getYearsLeft(continent, gender) {
-  //   //scale to planet
-  //   const lifeExpectancyEarth = this.lifeExpectancies[continent][gender];
-  //   console.log(lifeExpectancyEarth);
+  getYearsLeft(continent, gender) {
+    // //scale to planet
+    // const lifeExpectancyEarth = this.lifeExpectancies[continent][gender];
+    // console.log(lifeExpectancyEarth);
 
-  //   const lifeExpectancyPlanet = lifeExpectancyEarth * 365 / this.daysInSolarYear;
-  //   //subtract age, round down
-  //   return Math.floor(lifeExpectancyPlanet - this.getAge());
-  // }
+    // const lifeExpectancyPlanet = lifeExpectancyEarth * 365 / this.daysInSolarYear;
+    // //subtract age, round down
+    // return Math.floor(lifeExpectancyPlanet - this.getAge());
+  }
   /*
   getYearsLeft(country, activityLevel)
   getTravelTime

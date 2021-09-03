@@ -29,7 +29,7 @@ describe("Planet", () => {
     expect(myPlanet.getAge()).toEqual(157);
   });
 
-  // test("should return the user's years left on the planet", () => {
-  //   expect(myPlanet.getYearsLeft("europe", "male")).toEqual(154);
-  // });
+  test("should return the user's years left on the planet", () => {
+    expect(myPlanet.getYearsLeft("europe", "male")).toEqual(154);
+  });
 });
