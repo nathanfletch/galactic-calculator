@@ -30,17 +30,11 @@ export default class Planet {
   }
   
   getYearsLeft(continent, gender) {
-    //get earth life exp.
-    const lifeExpectancyEarth = this.lifeExpectancies[continent][gender];
+    const yearsLeftEarth = this.lifeExpectancies[continent][gender] - this.earthAgeOfUser;
     
-    //scale to planet
-    const lifeExpectancyPlanet = lifeExpectancyEarth * 365 / this.daysInSolarYear;
-
-    //subtract scaled age, round down
-    return Math.floor(lifeExpectancyPlanet - this.getAge());
+    return Math.floor(yearsLeftEarth * 365 / this.daysInSolarYear);
   }
   /*
-  getYearsLeft(country, activityLevel)
   getTravelTime
 
   these should be subclasses of a "Planet" parent class:

@@ -30,6 +30,6 @@ describe("Planet", () => {
   });
 
   test("should return the user's years left on the planet", () => {
-    expect(myPlanet.getYearsLeft("europe", "male")).toEqual(154);
+    expect(myPlanet.getYearsLeft("europe", "male")).toEqual(153);
   });
 });
