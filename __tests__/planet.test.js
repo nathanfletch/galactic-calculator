@@ -15,17 +15,21 @@ describe("Planet", () => {
   test("should create a planet object with a lifeExpectancy object with life expectancy data", () => {
     expect(myPlanet.lifeExpectancies).toEqual({
       "north america": {
-        "male": 77,
-        "female": 81
+        male: 77,
+        female: 81,
       },
-      "europe": {
-        "male": 75,
-        "female": 82
-      }
-    })
-  })
+      europe: {
+        male: 75,
+        female: 82,
+      },
+    });
+  });
 
   test("should return the user's age on the planet", () => {
     expect(myPlanet.getAge()).toEqual(157);
   });
+
+  // test("should return the user's years left on the planet", () => {
+  //   expect(myPlanet.getYearsLeft("europe", "male")).toEqual(154);
+  // });
 });

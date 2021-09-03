@@ -5,17 +5,17 @@ export default class Planet {
     this.daysInSolarYear = days;
     //in millions of miles:
     this.distanceFromEarth = dist;
-    // this.lifeExpectancies = {
-    //   "north america": {
-    //     "male": 77,
-    //     "female": 81
-    //   },
-    //   "europe": {
-    //     "male": 75,
-    //     "female": 82
-    //   }
-    // }
-  
+    this.lifeExpectancies = {
+      "north america": {
+        "male": 77,
+        "female": 81,
+      },
+      "europe": {
+        "male": 75,
+        "female": 82,
+      }
+    };
+
     /*
     birthDay
     birthMonth
@@ -28,6 +28,16 @@ export default class Planet {
   getAge() {
     return Math.floor((this.earthAgeOfUser * 365) / this.daysInSolarYear);
   }
+  
+  // getYearsLeft(continent, gender) {
+  //   //scale to planet
+  //   const lifeExpectancyEarth = this.lifeExpectancies[continent][gender];
+  //   console.log(lifeExpectancyEarth);
+
+  //   const lifeExpectancyPlanet = lifeExpectancyEarth * 365 / this.daysInSolarYear;
+  //   //subtract age, round down
+  //   return Math.floor(lifeExpectancyPlanet - this.getAge());
+  // }
   /*
   getYearsLeft(country, activityLevel)
   getTravelTime
