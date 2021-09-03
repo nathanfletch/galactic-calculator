@@ -1,17 +1,21 @@
 export default class Planet {
-  constructor() {
+  constructor(age, days) {
+    this.earthAgeOfUser = age;
+    this.daysInSolarYear = days;
+    // this.nameOfPlanet = 
     /*
-    earthAgeOfUser = age;
-    daysInSolarYear = (hardcoded? passed in this parent class constructor)
-
     birthDay
     birthMonth
     birthYear
-
+    milesFromEarth
+    country "database" - country key, life expectancy value
     */
   }
+  
+  // getAge() {
+
+  // }
   /*
-  getAge()
   getYearsLeft(country, activityLevel)
   getTravelTime
 
