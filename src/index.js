@@ -10,6 +10,27 @@ import "./css/styles.css";
 //globals
 let jupiter, venus, mars, mercury;
 
+function displayPlanet(planet) {
+  const planetHtml = `<div class="card" style="width: 18rem;">
+  <div class="card-header">
+    ${planet.nameOfPlanet}
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Your age on ${planet.nameOfPlanet}: ${planet.getAge()}</li>
+    
+    
+  </ul>
+</div>`;
+$("#planets-screen").append(planetHtml);
+}
+
+populateContinents(continents) {
+  continentsHtml = Object.keys(continents).map(key => {
+    return `<option value='${key}'>${key}</option>`
+  }).join("");
+  $("#continent-input").append(continentsHtml);
+}
+
 $(document).ready(function() {
   $('#age-form').submit(function(e) {
     e.preventDefault();
@@ -20,6 +41,7 @@ $(document).ready(function() {
     mercury = new Mercury(age);
     console.log(jupiter, venus, mars, mercury);
     $("#welcome-screen").hide();
+    displayPlanet(mercury);
     $("#planets-screen").show();
   })
 })
