@@ -12,9 +12,9 @@ export default class Planet {
     */
   }
   
-  // getAge() {
-
-  // }
+  getAge() {
+    
+  }
   /*
   getYearsLeft(country, activityLevel)
   getTravelTime
