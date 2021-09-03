@@ -32,4 +32,9 @@ describe("Planet", () => {
   test("should return the user's years left on the planet", () => {
     expect(myPlanet.getYearsLeft("europe", "male")).toEqual(153);
   });
+
+  test("should return a negative number representing the number of years the user has already lived past their life expectancy on the planet", () => {
+    myPlanet = new Planet(88, "Mercury", 88, 44);
+    expect(myPlanet.getYearsLeft("europe", "male")).toBeLessThan(0);
+  })
 });

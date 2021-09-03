@@ -34,6 +34,10 @@ export default class Planet {
     
     return Math.floor(yearsLeftEarth * 365 / this.daysInSolarYear);
   }
+
+  // getYearsPastEarth(continent, gender) {
+
+  // }
   /*
   getTravelTime
 
