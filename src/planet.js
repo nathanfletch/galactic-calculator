@@ -1,8 +1,10 @@
 export default class Planet {
-  constructor(age, days) {
+  constructor(age, name, days, dist) {
     this.earthAgeOfUser = age;
+    this.nameOfPlanet = name;
     this.daysInSolarYear = days;
-    // this.nameOfPlanet = 
+    //in millions of miles:
+    this.distanceFromEarth = dist;
     /*
     birthDay
     birthMonth
@@ -11,9 +13,9 @@ export default class Planet {
     country "database" - country key, life expectancy value
     */
   }
-  
+
   getAge() {
-    return Math.floor(this.earthAgeOfUser * 365 / this.daysInSolarYear);
+    return Math.floor((this.earthAgeOfUser * 365) / this.daysInSolarYear);
   }
   /*
   getYearsLeft(country, activityLevel)
