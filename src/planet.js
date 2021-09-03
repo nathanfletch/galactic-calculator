@@ -13,7 +13,7 @@ export default class Planet {
   }
   
   getAge() {
-    
+    return Math.floor(this.earthAgeOfUser * 365 / this.daysInSolarYear);
   }
   /*
   getYearsLeft(country, activityLevel)
