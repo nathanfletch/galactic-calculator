@@ -1,7 +1,7 @@
 import Planet from './planet';
 
 export default class Mercury extends Planet {
-  constructor() {
-    super();
+  constructor(age) {
+    super(age, "Mercury", 88, 44);
   }
 }

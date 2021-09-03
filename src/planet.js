@@ -5,6 +5,17 @@ export default class Planet {
     this.daysInSolarYear = days;
     //in millions of miles:
     this.distanceFromEarth = dist;
+    // this.lifeExpectancies = {
+    //   "north america": {
+    //     "male": 77,
+    //     "female": 81
+    //   },
+    //   "europe": {
+    //     "male": 75,
+    //     "female": 82
+    //   }
+    // }
+  
     /*
     birthDay
     birthMonth
