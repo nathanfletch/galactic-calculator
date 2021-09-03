@@ -30,13 +30,14 @@ export default class Planet {
   }
   
   getYearsLeft(continent, gender) {
-    // //scale to planet
-    // const lifeExpectancyEarth = this.lifeExpectancies[continent][gender];
-    // console.log(lifeExpectancyEarth);
+    //get earth life exp.
+    const lifeExpectancyEarth = this.lifeExpectancies[continent][gender];
+    
+    //scale to planet
+    const lifeExpectancyPlanet = lifeExpectancyEarth * 365 / this.daysInSolarYear;
 
-    // const lifeExpectancyPlanet = lifeExpectancyEarth * 365 / this.daysInSolarYear;
-    // //subtract age, round down
-    // return Math.floor(lifeExpectancyPlanet - this.getAge());
+    //subtract scaled age, round down
+    return Math.floor(lifeExpectancyPlanet - this.getAge());
   }
   /*
   getYearsLeft(country, activityLevel)
