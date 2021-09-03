@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galactic Calculator</title>
+  </head>
+  <body>
+    <div id="welcome-screen" class="container-fluid text-center p-0">
+      <h1>The year is 3041.</h1>
+      <h2>
+        The nearby planets have been terraformed and you have been selected as a
+        colonist.
+      </h2>
+
+      <form action="submit" id="age-form">
+        <label for="age">Enter your age: </label
+        ><input type="number" name="age" id="age-input" class="form-control" min="0"/>
+        <button class="btn button-success">To the stars!</button>
+      </form>
+    </div>
+    <div id="planets-screen" class="container-fluid text-center p-0 hidden">
+      <h1>There are 4 planets to choose from: </h1>
+    </div>
+  </body>
+</html>
