@@ -10,7 +10,6 @@ describe("Venus", () => {
     expect(venus.nameOfPlanet).toEqual("Venus");
     expect(venus.daysInSolarYear).toEqual(225);
     expect(venus.distanceFromEarth).toEqual(101);
-    console.log(venus.lifeExpectancies);
     expect(venus.lifeExpectancies).not.toBeUndefined();
   });
 });
