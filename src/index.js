@@ -15,17 +15,15 @@ function displayPlanet(planet) {
   <div class="card-header">
     ${planet.nameOfPlanet}
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">Your age on ${planet.nameOfPlanet}: ${planet.getAge()}</li>
-    
-    
-  </ul>
-</div>`;
-$("#planets-screen").append(planetHtml);
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Your age on ${planet.nameOfPlanet}: ${planet.getAge()}</li>
+    </ul>
+  </div>`;
+  $("#planets-screen").append(planetHtml);
 }
 
-populateContinents(continents) {
-  continentsHtml = Object.keys(continents).map(key => {
+function populateContinents(continents) {
+  const continentsHtml = Object.keys(continents).map(key => {
     return `<option value='${key}'>${key}</option>`
   }).join("");
   $("#continent-input").append(continentsHtml);
@@ -41,6 +39,7 @@ $(document).ready(function() {
     mercury = new Mercury(age);
     console.log(jupiter, venus, mars, mercury);
     $("#welcome-screen").hide();
+    populateContinents(mars.lifeExpectancies);
     displayPlanet(mercury);
     $("#planets-screen").show();
   })
