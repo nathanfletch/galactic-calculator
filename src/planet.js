@@ -6,14 +6,15 @@ export default class Planet {
     //in millions of miles:
     this.distanceFromEarth = dist;
     this.lifeExpectancies = {
-      "north america": {
-        "male": 77,
-        "female": 81,
-      },
       "europe": {
         "male": 75,
-        "female": 82,
+        "female": 82
+      },
+      "northAmerica": {
+        "male": 77,
+        "female": 81
       }
+      
     };
 
     /*
