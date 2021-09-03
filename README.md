@@ -11,16 +11,35 @@ Nathan Fletcher
 
 ## Description
 
+This site takes user input and displays age and life expectancy information for various planets.
 
 ## Techonologies used:
 
+- HTML
+- CSS
+- JavaScript
+- jQuery 
+- webpack
+- jest
+
 ## Setup
+
+1. Clone this repo.
+2. Navigate to the folder and run npm install in your terminal.
+3. Run npm start.
+
+
+## Future Plans
+
+- Improve the UI
+- Add a tagline for each planet
+- Implement a method to show travel time to each planet
+- Implement additional methods
+- Show interesting trivia
 
 ## Known Bugs
 
-There are no known bugs at this time.
-
-## Future Plans
+There are no known bugs at this time. If you find any, please contact me.
 
 ## Contact
 

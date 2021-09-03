@@ -7,7 +7,7 @@
     <title>Galactic Calculator</title>
   </head>
   <body>
-    <div id="welcome-screen" class="container-fluid text-center p-0">
+    <div id="welcome-screen" class="container-fluid text-center p-4">
       <h1 class="m-3">The year is 3041.</h1>
       <h2 class="m-3">
         The nearby planets have been terraformed and you have been selected as a
@@ -17,18 +17,19 @@
       <form class="m-3" action="submit" id="age-form">
         <label for="age">Enter your age: </label
         ><input type="number" name="age" id="age-input" min="0" />
-        <button class="btn btn-success">To the stars!</button>
+        <br>
+        <button class="my-3 btn btn-success">To the stars!</button>
       </form>
     </div>
-    <div id="planets-screen" class="container-fluid text-center p-0 hidden">
-      <h1>There are 4 planets to choose from:</h1>
-      <h2>Enter your continent and gender to see longevity information.</h2>
+    <div id="planets-screen" class="container-fluid text-center p-4 hidden">
+      <h1 class="m-3">There are 4 planets to choose from:</h1>
       <form class="m-3" action="submit" id="life-form">
+        <h2 class="m-3">Enter your continent and gender to see longevity information.</h2>
         <label>Enter your continent: </label>
         <select name="continent" id="continent-input"></select>
         <div class="radio form-check">
           <label>
-            <input type="radio" name="gender" value="female" />
+            <input type="radio" name="gender" value="female" checked="true" />
             Female
           </label>
         </div>
@@ -42,7 +43,7 @@
 
         <button class="btn btn-success">See result</button>
       </form>
-      <div id="card-holder" class="row"></div>
+      <div id="card-holder" class="row p-3"></div>
 
     </div>
   </body>

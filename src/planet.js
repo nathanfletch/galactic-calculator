@@ -13,8 +13,23 @@ export default class Planet {
       "northAmerica": {
         "male": 77,
         "female": 81
+      },
+      "africa": {
+        "male": 62,
+        "female": 65
+      },
+      "oceania": {
+        "male": 77,
+        "female": 81
+      },
+      "latinAmerica": {
+        "male": 72,
+        "female": 79
+      },
+      "asia": {
+        "male": 71,
+        "female": 75
       }
-      
     };
 
     /*

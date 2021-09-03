@@ -21,7 +21,7 @@ function populateContinents(continents) {
 }
 
 function displayPlanet(planet) {
-  const planetHtml = `<div class="col-3-md card" style="width: 18rem;">
+  const planetHtml = `<div class="col-3-md card mx-auto" style="width: 18rem;">
   <div class="card-header">
     ${planet.nameOfPlanet}
   </div>
@@ -68,5 +68,5 @@ $("#life-form").submit(function (e) {
     console.log(message);
     $(`#${planet.nameOfPlanet}`).append(message);
   });
-  $("#life-form").hide();
+  $("#life-form").slideUp();
 });
